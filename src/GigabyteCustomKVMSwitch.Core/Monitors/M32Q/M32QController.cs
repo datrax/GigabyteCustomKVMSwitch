@@ -1,7 +1,7 @@
 ﻿using GigabyteCustomKVMSwitch_Core.Exceptions;
 using HidLibrary;
 
-namespace GigabyteCustomKVMSwitch_Core.Models.M32Q;
+namespace GigabyteCustomKVMSwitch_Core.Monitors.M32Q;
 
 internal class M32QController : IMonitorController
 {
