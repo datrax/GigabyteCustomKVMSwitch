@@ -89,7 +89,7 @@ public partial class MainForm : Form
 
         RegistryKey? rk = GetAutostartRegistryKey();
         if (autostartCheckbox.Checked)
-            rk?.SetValue(AutostartRegisterKeyName, Application.ExecutablePath);
+            rk?.SetValue(AutostartRegisterKeyName, $"\"{Application.ExecutablePath}\"");
         else
             rk?.DeleteValue(AutostartRegisterKeyName, false);
 

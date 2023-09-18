@@ -1,5 +1,4 @@
-﻿
-using GigabyteCustomKVMSwitch_Core.Models.M32Q;
+﻿using GigabyteCustomKVMSwitch_Core.Monitors.M32Q;
 
 namespace GigabyteCustomKVMSwitch_Core;
 

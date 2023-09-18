@@ -10,7 +10,7 @@ public class AppSettings
 
     public Keys AdditionalKey { get; set; }
 
-    private const string configFilePath = "config.json";
+    private static string configFilePath = Path.Combine(AppContext.BaseDirectory, "config.json");
 
 
     [JsonIgnore]
