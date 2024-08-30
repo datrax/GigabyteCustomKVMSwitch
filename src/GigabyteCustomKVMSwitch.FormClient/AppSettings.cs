@@ -9,6 +9,7 @@ public class AppSettings
 
 
     public Keys AdditionalKey { get; set; }
+    public IEnumerable<Keys> AllKeys => SpecialKeys.Append(AdditionalKey);
 
     private static string configFilePath = Path.Combine(AppContext.BaseDirectory, "config.json");
 

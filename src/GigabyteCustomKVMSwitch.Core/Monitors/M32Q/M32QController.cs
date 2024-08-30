@@ -30,6 +30,7 @@ internal class M32QController : IMonitorController
 
         var result = device.WriteReport(report);
 
+        device.CloseDevice();
         return result;
     }
 

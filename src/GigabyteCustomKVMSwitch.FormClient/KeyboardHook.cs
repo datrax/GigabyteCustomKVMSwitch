@@ -45,8 +45,14 @@ public static partial class Program
                 if (wParam == 257 && Control.ModifierKeys == appSettings.ModifierKeys && key == appSettings.AdditionalKey)
                 {
                     TimeStamp = DateTime.UtcNow;
+
+                    while (Control.ModifierKeys != Keys.None)
+                    {                       
+                        Thread.Sleep(50);
+                    }
+                    
                     var factory = new MonitorControllerFactory();
-                    factory.M32Q().ToggleKvm();                        
+                    factory.M32Q().ToggleKvm();
                 }
             }
         }
