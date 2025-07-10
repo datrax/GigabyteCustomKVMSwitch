@@ -42,7 +42,8 @@ public static partial class Program
 
             if (key == appSettings.AdditionalKey)
             {
-                if (wParam == 257 && Control.ModifierKeys == appSettings.ModifierKeys && key == appSettings.AdditionalKey)
+                //256 for down 257 - up
+                if (wParam == 256 && Control.ModifierKeys == appSettings.ModifierKeys && key == appSettings.AdditionalKey)
                 {
                     TimeStamp = DateTime.UtcNow;
 
